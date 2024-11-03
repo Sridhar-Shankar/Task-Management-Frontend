@@ -18,7 +18,7 @@ import { useDispatch } from 'react-redux';
 // Redux action for adding user data to the store
 import { adduser } from '../../Store/Userslice';
 
-const LoginSignup = () => {
+const Login = () => {
   // State hooks for managing component state
   const[signup, setsignup] = useState(true); // Determines whether the form is in signup or login mode
   const[error, seterror] = useState(""); // For displaying form validation or request errors
@@ -172,4 +172,4 @@ const LoginSignup = () => {
   )
 }
 
-export default LoginSignup;
+export default Login;

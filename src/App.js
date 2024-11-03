@@ -1,9 +1,9 @@
 // Import necessary components and hooks
-import Home from "./Components/Home/Home";
-import LoginSignup from "./Components/Login/Login";
+import Home from "./components/Home/Home";
 import {BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom";
-import Readonlychecklist from "./Components/Read/Read";
+import Readonlychecklist from "./components/Read/Read";
 import { useSelector } from "react-redux";
+import Login from "./components/Login/Login";
 
 function App() {
   // Retrieve the 'userid' from the Redux store
@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Routes>
         {/* Define the route for the login/signup page */}
-        <Route exact path="/" element={<LoginSignup/>}/>
+        <Route exact path="/" element={<Login/>}/>
         
         {/* Define protected routes that require the user to be logged in (i.e., have a userid).
             If the user is not logged in, redirect to the login/signup page. */}
